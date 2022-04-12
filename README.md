@@ -43,7 +43,7 @@ Dataset Loading:
 預測方式:
 3/29: ~~對於CT圖之pixel array直接行訓練與預測，epoch:11，accuracy:0.6778~~ (此數據不準確，直接使用圖片是不可行的，詳見4/12[圖片預處理](https://github.com/jerryyyyy708/Lung_Cancer_CT_Prediction#%E5%9C%96%E7%89%87%E9%A0%90%E8%99%95%E7%90%86))
 
-4/12: 經過[圖片預處理](https://github.com/jerryyyyy708/Lung_Cancer_CT_Prediction#%E5%9C%96%E7%89%87%E9%A0%90%E8%99%95%E7%90%86)步驟1~3處理片後進行訓練與預測，epoch:50，accuracy:0.4717
+4/12: 經過[圖片預處理](https://github.com/jerryyyyy708/Lung_Cancer_CT_Prediction#%E5%9C%96%E7%89%87%E9%A0%90%E8%99%95%E7%90%86)步驟1~3處理後進行訓練與預測，epoch:50，accuracy:0.4717
 
 
 ## 論文閱讀
