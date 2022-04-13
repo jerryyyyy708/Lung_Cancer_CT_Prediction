@@ -59,3 +59,10 @@ Selection Algorithm:透過肺部中央範圍的Pixel值選擇適合用以訓練M
 
 FPN: 用FPN偵測不同scale的特徵，以增強Lung CT圖的預測效果(由於infection可能出現在不同尺度)
 
+## 代辦事項
+
+1. Selection Algorithm 篩選圖片
+2. 加深Model提升預測效果
+3. 應用FPN提取不同scale特徵
+4. 使用Grad-cam將預測可視化
+
