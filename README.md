@@ -10,8 +10,11 @@ https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=70224216
 <img src="https://i.imgur.com/YSP0SHg.png" width="300px">
 
 **Windowing function:** 
+
 Pixel_Windowed = pixel x slope + intercept
+
 Max_Pixel = window_center + window_width/2
+
 Min_Pixel = window_center - window_width/2
 
 #### 2.Rescale windowed pixel array to range 0~255
