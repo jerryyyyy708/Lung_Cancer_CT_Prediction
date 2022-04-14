@@ -1,0 +1,4 @@
+Data prepocessing method see note,,,,,,,,,,,,,,,,,,,,,,,
+Model,Date,Epoch,Train Size,Test Size,Accuracy,A/A,A/B,A/E,A/G,B/A,B/B,B/E,B/G,E/A,E/B,E/E,E/G,G/A,G/B,G/E,G/G,run_time,note
+Model_1,2022/4/14,11,1783,956,0.677824268,117,0,0,0,0,231,77,0,83,0,214,0,42,105,1,86,not calculated,raw pixel array (Not Applicable)
+Model_1,2022/4/14,50,1783,956,0.471757322,49,44,8,16,28,181,79,20,35,45,147,70,21,139,0,74,290.7998848,step 1~3
