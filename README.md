@@ -6,7 +6,7 @@
 https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=70224216
 ## 圖片預處理
 
-#### 1.將 pixel array 經過 windowing 轉化為正常單位。 (4/12)
+#### 1.將 pixel array 經過 windowing 轉化為正常單位。
 <img src="https://i.imgur.com/YSP0SHg.png" width="400px">
 
 **Windowing function:** 
@@ -24,7 +24,7 @@ Min_Pixel = window_center - window_width/2
 <img src="https://i.imgur.com/PNE9qCL.png" width="400px">
 
 
-#### 4. 將圖片依 Soft Tissue Window 與 Lung Tissue Window 分開，兩者需獨立使用 (4/14)
+#### 4. 將圖片依 Soft Tissue Window 與 Lung Tissue Window 分開，兩者需獨立使用 
 
 <img src="https://i.imgur.com/nItlDxX.png" width="400px">
 
@@ -35,7 +35,7 @@ Min_Pixel = window_center - window_width/2
 由於Soft Tissue Window的圖片中 window width 較小，薄壁組織的部分會變黑的無法觀測，因此本次將以 Lung Tissue Window 之圖片作為主要的預測對象。
 
 ## Model
-Model_1 (3/29)
+Model_1 
 
 <img src="https://i.imgur.com/yqnPSgX.png" width="500px">
 
@@ -45,7 +45,7 @@ ResNet
 
 **Dataset Loading:**
 
-將圖片依照病徵分為四個Label，由於Label 為E之患者僅有5位，且匯入完整Dataset電腦無法負荷，因此每個病徵各取5名病患，3名病患的CT圖做為Train set，另外兩名作為Test set。(3/29)
+將圖片依照病徵分為四個Label，由於Label 為E之患者僅有5位，且匯入完整Dataset電腦無法負荷，因此每個病徵各取5名病患，3名病患的CT圖做為Train set，另外兩名作為Test set。
 
 
 **預測方式 (詳細數據見report.csv, 4/14新增):**
@@ -59,9 +59,9 @@ ResNet
 
 *表格1 步驟4之前之Data分布*
 
-3/29: ~~對於CT圖之pixel array直接行訓練與預測，epoch:11，accuracy:0.6778~~ (此數據不準確，直接使用圖片是不可行的，詳見4/12[圖片預處理](https://github.com/jerryyyyy708/Lung_Cancer_CT_Prediction#%E5%9C%96%E7%89%87%E9%A0%90%E8%99%95%E7%90%86))
+Model_1: ~~對於CT圖之pixel array直接行訓練與預測，epoch:11，accuracy:0.6778~~ (此數據不準確，直接使用圖片是不可行的，詳見[圖片預處理](https://github.com/jerryyyyy708/Lung_Cancer_CT_Prediction#%E5%9C%96%E7%89%87%E9%A0%90%E8%99%95%E7%90%86))
 
-4/12: ~~經過圖片預處理步驟1~3處理後進行訓練與預測，epoch:50，accuracy:0.4717~~ (此數據不準確，圖片需經過步驟4分流，詳見4/14[圖片預處理](https://github.com/jerryyyyy708/Lung_Cancer_CT_Prediction#%E5%9C%96%E7%89%87%E9%A0%90%E8%99%95%E7%90%86))
+Model_1: ~~經過圖片預處理步驟1~3處理後進行訓練與預測，epoch:50，accuracy:0.4717~~ (此數據不準確，圖片需經過步驟4分流，詳見[圖片預處理](https://github.com/jerryyyyy708/Lung_Cancer_CT_Prediction#%E5%9C%96%E7%89%87%E9%A0%90%E8%99%95%E7%90%86))
 
 | Label | Trainset | Testset |
 | ----- | -------- | ------- |
@@ -73,12 +73,12 @@ ResNet
 
 *表格2 步驟4之後之Data分布*
 
-4/14: 經過[圖片預處理](https://github.com/jerryyyyy708/Lung_Cancer_CT_Prediction#%E5%9C%96%E7%89%87%E9%A0%90%E8%99%95%E7%90%86)步驟1~4處理後進行訓練與預測，epoch:97，accuracy:0.55
+Model_1: 經過[圖片預處理](https://github.com/jerryyyyy708/Lung_Cancer_CT_Prediction#%E5%9C%96%E7%89%87%E9%A0%90%E8%99%95%E7%90%86)步驟1~4處理後進行訓練與預測，epoch:97，accuracy:0.55
 
-4/15: 經過[圖片預處理](https://github.com/jerryyyyy708/Lung_Cancer_CT_Prediction#%E5%9C%96%E7%89%87%E9%A0%90%E8%99%95%E7%90%86)步驟1~4處理後進行訓練與預測，epoch:79，accuracy:0.6176，label A、B準確率高，C大約50%，G無法正確預測。(目標:用Gradcam觀察原因)
+ResNet: 經過[圖片預處理](https://github.com/jerryyyyy708/Lung_Cancer_CT_Prediction#%E5%9C%96%E7%89%87%E9%A0%90%E8%99%95%E7%90%86)步驟1~4處理後進行訓練與預測，epoch:79，accuracy:0.6176，label A、B準確率高，C大約50%，G無法正確預測。(目標:用Gradcam觀察原因)
 ## 論文閱讀
 
-**A fully automated deep learning-based network for detecting COVID-19 from a new and large lung CT scan dataset** (3/15新增)
+**A fully automated deep learning-based network for detecting COVID-19 from a new and large lung CT scan dataset**
 https://www.sciencedirect.com/science/article/pii/S1746809421001853
 
 Selection Algorithm:透過肺部中央範圍的Pixel值選擇適合用以訓練Model之圖片
