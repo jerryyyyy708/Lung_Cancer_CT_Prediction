@@ -24,7 +24,7 @@ Min_Pixel = window_center - window_width/2
 <img src="https://i.imgur.com/PNE9qCL.png" width="400px">
 
 
-#### 4. 將圖片依 Soft Tissue Window 與 Lung Tissue Window 分開，兩者需獨立使用 
+#### 4. 將圖片依 Soft Tissue Window 與 Lung Tissue Window 分開
 
 <img src="https://i.imgur.com/nItlDxX.png" width="400px">
 
@@ -32,7 +32,6 @@ Min_Pixel = window_center - window_width/2
 
 4-2 其餘的屬於 Lung Tissue Window  (可觀測肺的薄壁組織 Lung parenchyma)
 
-由於Soft Tissue Window的圖片中 window width 較小，薄壁組織的部分會變黑的無法觀測，因此本次將以 Lung Tissue Window 之圖片作為主要的預測對象。
 
 ## Model
 Model_1 
