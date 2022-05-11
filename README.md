@@ -78,11 +78,24 @@ ResNet: 經過[圖片預處理](https://github.com/jerryyyyy708/Lung_Cancer_CT_P
 ## 論文閱讀
 
 **A fully automated deep learning-based network for detecting COVID-19 from a new and large lung CT scan dataset**
+
 https://www.sciencedirect.com/science/article/pii/S1746809421001853
 
 Selection Algorithm:透過肺部中央範圍的Pixel值選擇適合用以訓練Model之圖片
 
 FPN: 用FPN偵測不同scale的特徵，以增強Lung CT圖的預測效果(由於infection可能出現在不同尺度)
+
+**Deep Residual Learning for Image Recognition**
+
+ResNet https://arxiv.org/abs/1512.03385
+
+**U-Net: Convolutional Networks for Biomedical Image Segmentation**
+
+U-Net https://arxiv.org/abs/1505.04597
+
+**Grad-CAM: Visual Explanations from Deep Networks via Gradient-based Localization**
+
+GradCAM https://arxiv.org/abs/1610.02391
 
 ## 代辦事項
 
