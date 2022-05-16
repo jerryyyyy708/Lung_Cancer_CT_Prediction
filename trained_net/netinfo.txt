@@ -1,1 +1,1 @@
-trained_net_0412: Model_1 50 epoches
+trained_net_0516: Model_1 23 epoches
