@@ -81,12 +81,6 @@ ResNet50: epoch 11, accuracy: 0.5703703703703704。
 
 ## 論文閱讀
 
-**A fully automated deep learning-based network for detecting COVID-19 from a new and large lung CT scan dataset**
-
-https://www.sciencedirect.com/science/article/pii/S1746809421001853
-
-FPN: 用FPN偵測不同scale的特徵，以增強Lung CT圖的預測效果(由於infection可能出現在不同尺度)
-
 **Deep Residual Learning for Image Recognition**
 
 ResNet https://arxiv.org/abs/1512.03385
@@ -98,24 +92,4 @@ U-Net https://arxiv.org/abs/1505.04597
 **Grad-CAM: Visual Explanations from Deep Networks via Gradient-based Localization**
 
 GradCAM https://arxiv.org/abs/1610.02391
-
-## 待辦事項
-
-~~1. Selection Algorithm 篩選圖片 (已完成)~~
-
-2.特化Model提升預測效果
-
-3.應用FPN提取不同scale特徵
- 
-4.使用Grad-cam將預測可視化
-
-5.Data augmentation，以讓Label E之圖片可以加入訓練
-
-## Update
-
-2022 4/13 新增圖片預處理 step 1~3、Model_1
-
-2022 4/14 新增圖片預處理 step 4，新增report
-
-2022 5/16 版面重整(移除無效訓練數據)、新增由visualization tool 延伸之圖片篩選
 
