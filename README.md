@@ -11,10 +11,7 @@ https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=70224216
 資料集中並非所有圖片都是適合用來訓練的 (如下圖)，
 
 ![](https://i.imgur.com/1vUbk32.png)
-利用資料集官網中提供之 visualization tool，可透過 annotation 資料夾中之.xml檔將圖片用於癌症判斷之位置以方框標示出來，以此了解 Label 的判斷依據，而未被標示之圖片即為無法用於訓練、判斷Label之圖片。以該 tool 為基礎修改，將有被標示的圖片檔名寫進文件中，取得有被標示之圖片列表，將其中的圖片作為使用的資料集。
-
-![](https://i.imgur.com/jCQI5bj.png)
- *Visualize結果與有標示圖片之列表*
+因此需先篩選出足以分辨腫瘤存在的圖像。
 
 ## 圖片預處理
 
