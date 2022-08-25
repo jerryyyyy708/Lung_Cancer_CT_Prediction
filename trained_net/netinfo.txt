@@ -1,1 +1,0 @@
-trained_net_0516: Model_1 23 epoches
