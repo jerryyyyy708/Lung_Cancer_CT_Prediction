@@ -1,5 +1,5 @@
 # Lung_Cancer_CT_Prediction
-###### 資訊工程專題紀錄，進度報告與修正過去的錯誤
+###### 學習如何預處理及應用CT圖檔案
 
 ## Dataset
 <img src="https://i.imgur.com/DMpxWjj.png" width="600px">
@@ -86,7 +86,4 @@ ResNet https://arxiv.org/abs/1512.03385
 
 U-Net https://arxiv.org/abs/1505.04597
 
-**Grad-CAM: Visual Explanations from Deep Networks via Gradient-based Localization**
-
-GradCAM https://arxiv.org/abs/1610.02391
 
