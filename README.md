@@ -76,14 +76,3 @@ ResNet50: epoch 11, accuracy: 0.5703703703703704。
 
 
 
-## 論文閱讀
-
-**Deep Residual Learning for Image Recognition**
-
-ResNet https://arxiv.org/abs/1512.03385
-
-**U-Net: Convolutional Networks for Biomedical Image Segmentation**
-
-U-Net https://arxiv.org/abs/1505.04597
-
-
